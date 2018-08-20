@@ -12,7 +12,7 @@ app.use('/', express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 mongoose.connect(encodeURI(config.getDbConnString()),
-    { auth: { user: 'arsh', password: 'mind123' }, useNewUrlParser: true },
+    { auth: { user: 'dbusername', password: 'dbpassword' }, useNewUrlParser: true },
     function (err) {
         if (err) {
             console.log('-----------ERROR -----------   :   ' + err);
